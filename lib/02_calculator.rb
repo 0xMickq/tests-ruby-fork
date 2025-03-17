@@ -10,6 +10,7 @@ puts "All the maths is in my hand! What I can do for you?"
 def add(number1, number2)
     a = number1 + number2
     puts "This is your results #{a}"
+    return a
 end
     
 #Appel la méthode
@@ -19,27 +20,42 @@ add(number1, number2)
 def subtract(number1, number2)
     a = number1 - number2
     puts "This is your results #{a}"
+    return a
 end
 
 #Appel la méthode
 subtract(number1, number2)
 
-def sum
+#Fait la somme des nombres d'un array
+def sum(number1, number2)
+    array = [number1, number2]
+    results = array.sum
+    puts "The sum of numbers in the array #{array} is: #{results}"
+    return results
+  end
 
-end
+#Appel la méthode
+sum(number1, number2)
 
 #multiplie les nombres entrées par l'utilisateur
 def multiply(number1, number2)
     a = number1 * number2
     puts "This is your results #{a}"
+    return a
 end
 
 #Appel la méthode
 multiply(number1, number2)
 
-def power
-
+#Affiche la puissance du nombre
+def power(number1, number2)
+    a = number1 ** number2
+    puts "This is your results #{a}"
+    return a
 end
+
+#Appel la méthode
+power(number1, number2)
 
 def factorial
 
