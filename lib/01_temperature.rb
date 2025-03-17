@@ -1,10 +1,10 @@
 def ftoc(fahrenheit)
-    celius = (fahrenheit - 32) * 5 / 9
+    celius = (fahrenheit - 32) * 5.0 / 9.0
     return celius.round(2)
 end
 
 def ctof(celsius)
-    fahrenheit = (celsius * 9 / 5) + 32
+    fahrenheit = (celsius * 9.0 / 5.0) + 32
     return fahrenheit.round(2)
 end
 
@@ -14,7 +14,6 @@ valeur = gets.chomp.to_f
 puts "Entrez l'unité (C ou F) :"
 print "> "
 unite = gets.chomp.to_s
-
 
 if unite == "C"
     puts "#{valeur}°C = #{ctof(valeur)} F°"
